@@ -78,12 +78,17 @@
 $(document).ready(function() {
 
 // Your code here...
-var one = $('#button-1')
-var firstNum = $("#first-number")
+$(".number").on("click", function(){
+    console.log(this.value);
+    var numbers = [];
+    for (var i= 0; i < numbers.length; i++ ){
+      numbers.push(this.value);
+      console.log(numbers[i]);
+      $("#first-number").text(numbers[i]);
+    }
+  
 
-one.on("click", function(){
-  firstNum.text("1")
-})
+            })
 
 });
 
